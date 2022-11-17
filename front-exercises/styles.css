@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.hidden {
+    display: none !important;
+}
+
+.invisible{
+    visibility: none;
+}
+
+html {
+    display: flex;
+    min-height: 100%;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+body {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(49deg, rgba(0,209,255,1) 14%, rgba(254,5,125,1) 90%);
+    box-shadow: 0 0 5px 1px rgb(114, 114, 114);
+}
+
+header * {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    flex:1;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    flex:1;
+    margin:0;
+    padding:0
+}
+
+nav li {
+    flex:1;
+    padding: 15px 50px;
+    margin: 5px;
+}
+
+nav li:hover {
+    background-color: white;
+    border-radius: 15px;
+}
+
+main {
+    flex: 1;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+}
+
+button {
+    padding:10px;
+    flex:1;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* INDEX */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 25px;
+    background-color: white;
+    flex: 1;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 1px rgb(114, 114, 114);
+    padding:25px;
+    gap:25px
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    padding:0 15%
+}
+
+section input {
+    padding:10px;
+    font-size: 1.5em;
+    flex:1
+}
+
+/* LOGIN */
+.error-message, .success-message {
+    flex:1;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.error-message {
+    background-color: rgb(230, 108, 108);
+    border: 3px solid rgb(167, 55, 55);
+}
+
+.success-message {
+    background-color: rgb(108, 230, 128);
+    border: 3px solid rgb(46, 107, 38);
+}
+
+.error-message-container, .success-message-container{
+    display: flex;
+}
+
+/* LISTENER */
+#boton-truchado {
+    background-color: rgb(0, 94, 100);
+    color: white;
+    height: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
